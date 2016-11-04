@@ -22,7 +22,7 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
 
-mongoose.connect('mongodb://localhost/news-scraper');
+mongoose.connect('mongodb://heroku_z3qn5wlt:4eg0e24penfoo80vcv9hln283l@ds143767.mlab.com:43767/heroku_z3qn5wlt');
 var db = mongoose.connection;
 
 db.on('error', function(err) {
