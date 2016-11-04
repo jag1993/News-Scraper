@@ -7,7 +7,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 var exphbs = require('express-handlebars');
 
-
+app.set('port', (process.env.PORT || 7015));
 
 
 app.use(logger('dev'));
@@ -53,6 +53,6 @@ app.use('/', routes);
 
 
 
-app.listen(7015, function() {
-  console.log('App running on port 7015!');
+app.listen(app.get('port'), function () {
+	console.log('App listening on PORT ', app.get('port'));
 });
