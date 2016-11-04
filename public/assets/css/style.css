@@ -1,0 +1,21 @@
+#movieTitles{
+	width:500px;
+	height:500px;
+	overflow: scroll;
+}
+
+.video{
+	width:500px;
+}
+
+#notes{
+	height:200px;
+}
+
+#notes{
+	height:200px;
+}
+
+#notesoutput{
+	height:200px;
+}

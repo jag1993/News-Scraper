@@ -1,0 +1,29 @@
+<h2>Youtube Video Titles</h2>
+
+<div class="panel panel-default col-lg-6" id="movieTitles">
+  <ul>
+     {{#each this.title}}
+      <button class="btn btn-danger display-block video" id={{_id}} value="https://www.youtube.com/embed{{{link}}}">
+          {{title}}
+         </button>
+      {{/each}}
+</ul>
+</div>
+
+<div class = "panel panel-default col-lg-6">
+	<iframe id="videoClicked" src=""></iframe>
+</div>
+
+<div id="notes" class = "panel panel-default col-lg-6">
+	<div id="bodyinput">
+	</div>
+	<div id="titleinput">
+	</div>
+</div>
+
+<div id="notesoutput" class="panel panel-default col-lg-6">
+	<div id="title">
+	</div>
+	<div id="body">
+	</div>
+</div>
