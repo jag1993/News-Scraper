@@ -11,8 +11,8 @@ $(document).on('click', '.video', function() {
     $.get(currentLocation + '/api/' + idVideo + '/', function(data) {
         $('#notes').empty();
         $('#notes').append('<h2>' + data.title + '</h2>');
-        $('#notes').append('<input id="titleinput" name="title" >');
-        $('#notes').append('<textarea id="bodyinput" name="body"></textarea>');
+        $('#notes').append('<input id="titleinput" name="title" placeholder="Title" >' + '</br>');
+        $('#notes').append('<textarea id="bodyinput" name="body" placeholder="Body"></textarea>');
         $('#notes').append('<button data-id="' + data._id + '" id="savenote">Save Note</button>');
     });
 
@@ -20,8 +20,8 @@ $(document).on('click', '.video', function() {
     	$('#title').empty();
     	$('#body').empty();
     	 for(i=0;i<data.length;i++){
-            $('#title').html(data[i].title);
-            $('#body').html(data[i].body);
+            $('#title').html('Title: '+ data[i].title);
+            $('#body').html('Body: '+ data[i].body);
         }
         
     });

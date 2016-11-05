@@ -1,6 +1,12 @@
+body{
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
 #movieTitles{
 	width:500px;
-	height:500px;
+	height:700px;
 	overflow: scroll;
 }
 
@@ -9,13 +15,17 @@
 }
 
 #notes{
-	height:200px;
-}
-
-#notes{
-	height:200px;
+	height:250px;
 }
 
 #notesoutput{
-	height:200px;
+	height:100px;
+}
+
+#videoClickedPanel{
+	height:300px;
+}
+#videoClicked{
+	height:250px;
+	width:350px;
 }
